@@ -1,0 +1,38 @@
+{
+  "index.qmd": {
+    "index.html": "50a117f4"
+  },
+  "abas/01_estrutura_do_projeto copy 2.qmd": {
+    "01_estrutura_do_projeto copy 2.html": "780a0b47"
+  },
+  "abas/02_analise_geral_do_publico.qmd": {
+    "02_analise_geral_do_publico.html": "65d2fc4b"
+  },
+  "abas/03_tratamento_das_variaveis.qmd": {
+    "03_tratamento_das_variaveis.html": "ed84a271"
+  },
+  "abas/04_selecao_de_variaveis.qmd": {
+    "04_selecao_de_variaveis.html": "409124d2"
+  },
+  "abas/05_treinamento_do_modelo.qmd": {
+    "05_treinamento_do_modelo.html": "466bfc6c"
+  },
+  "abas/06_tunning_de_hiperparametros copy.qmd": {
+    "06_tunning_de_hiperparametros copy.html": "296ca797"
+  },
+  "abas/07_avaliacao_final copy.qmd": {
+    "07_avaliacao_final copy.html": "178981ec"
+  },
+  "abas/08_conclusao.qmd": {
+    "08_conclusao.html": "10a2f721"
+  },
+  "abas/01_estrutura_do_projeto.qmd": {
+    "01_estrutura_do_projeto.html": "89403b88"
+  },
+  "abas/06_tunning_de_hiperparametros.qmd": {
+    "06_tunning_de_hiperparametros.html": "c4ef40e6"
+  },
+  "abas/07_avaliacao_final.qmd": {
+    "07_avaliacao_final.html": "ed32771b"
+  }
+}

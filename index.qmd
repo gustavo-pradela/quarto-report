@@ -1,0 +1,33 @@
+---
+title: "PicPay - Case Técnico"
+format:
+    html:
+        embed-resources: true
+        echo: false
+        page-layout: full
+        grid:
+            body-width: 1200px
+        css: styles.css
+---
+:::{.spacer-bottom-2}
+## Objetivo
+##### O presente desafio tem como objetivo a construção de um modelo de Credit Scoring. A base disponibilizada contém 81 variáveis e 10.738 registros, sendo que o "id" é a chave única da tabela, "safra" é o mês ano de concessão do crédito, "y" é a variável target e as demais são variáveis preditoras mascaradas.
+:::
+
+
+## Escopo
+##### O escopo do projeto abrange as etapas de exploração e tratamento dos dados, seleção de variáveis, construção e avaliação de modelos supervisionados, análise de estabilidade (tanto das variáveis quanto do modelo ao longo do tempo) e recomendação de ações com base nos resultados. Adicionalmente, são destacadas as métricas de desempenho e a análise de calibração do modelo, buscando assegurar aplicabilidade prática em cenários reais de tomada de decisão de crédito.
+
+##### A base foi dividida respeitando a cronologia das concessões de crédito, utilizando se as safras de outubro, novembro e dezembro como conjunto de validação Out of-Time (OOT), a fim de simular o comportamento futuro do modelo e testar sua estabilidade temporal.
+
+
+
+:::{.center .big-output .spacer-bottom}
+```{python}
+from datetime import datetime
+
+agora = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+print(f'Última atualização: {agora}')
+```
+
+:::

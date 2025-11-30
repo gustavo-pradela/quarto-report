@@ -1,0 +1,11 @@
+---
+title: "PicPay - Case Técnico"
+format:
+    html:
+        embed-resources: true
+        echo: false
+        page-layout: full
+        grid:
+            body-width: 1200px
+        css: styles.css
+---

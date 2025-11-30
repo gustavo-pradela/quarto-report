@@ -1,0 +1,44 @@
+.center {
+  text-align: center;
+}
+.spacer {
+  margin-top: 2em;   /* espaço antes */
+  margin-bottom: 2em; /* espaço depois */
+}
+.big-output pre code {
+  font-size: 2em; /* deixa bem grande */
+}
+.spacer-bottom {
+  margin-top: 0em;   /* espaço antes */
+  margin-bottom: 15em; /* espaço depois */
+}
+/* ---------------------------------------------------- */
+/* FORÇANDO O TAMANHO DA FONTE E NEGIRTO NA SIDEBAR */
+/* ---------------------------------------------------- */
+
+/* 1. Aumenta o tamanho da fonte e coloca em negrito os itens de navegação (links) 
+  dentro da Sidebar. 
+*/
+.sidebar li a.nav-link {
+    font-size: 1.25em !important; /* Valor mais agressivo, sinta-se à vontade para ajustar */
+    font-weight: bold !important;
+}
+
+/* 2. Aumenta o tamanho da fonte para os títulos de Seção na Sidebar (ex: "Etapas").
+*/
+.sidebar .sidebar-section-title {
+    font-size: 1.3em !important;
+    font-weight: bold !important;
+    margin-top: 15px !important; /* Adiciona um pequeno espaço acima, se quiser */
+}
+
+
+/* ---------------------------------------------------- */
+/* ESTILO PARA A NAVBAR SUPERIOR (OPCIONAL) */
+/* ---------------------------------------------------- */
+
+/* Aumenta o tamanho do texto principal da Navbar (onde está "PicPay - Case Técnico") */
+.navbar-brand {
+    font-size: 1.6rem !important;
+    font-weight: 900 !important; /* Negrito mais forte */
+}
