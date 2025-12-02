@@ -149,9 +149,9 @@
   {
     "objectID": "abas/04_tunning.html",
     "href": "abas/04_tunning.html",
-    "title": "5. 🔬 Tunning e Modelo de Regressão Logística Final",
+    "title": "4. 🔬 Tunning e Modelo de Regressão Logística Final",
     "section": "",
-    "text": "Nesta etapa, o modelo de Regressão Logística escolhido na Etapa 3 é otimizado usando pesquisa de hiperparâmetros e, em seguida, validado no conjunto de Teste Out-of-Time (OOT).\n\n\nO modelo foi otimizado utilizando o RandomizedSearchCV com Cross-Validation, buscando maximizar o KS Score, uma métrica crítica para separação de risco\nO processo de tunning focou na regularização do modelo para evitar overfitting e garantir a robustez.\nMelhores Parâmetros Encontrados:\n\n\n\nParâmetro\nValor Otimizado\n\n\n\n\nn_estimators\n800\n\n\nlearning_rate\n0.01\n\n\nsubsample\n0.7\n\n\nreg_alpha / reg_lambda\n0.0 / 0.0\n\n\n\n\n\nO modelo otimizado foi treinado na base completa de Treino e avaliado no conjunto de Teste OOT, confirmando seu potencial máximo.\n\n\n\nMétrica\nValor\n\n\n\n\nKS\n0.313688\n\n\nAUC\n0.708333\n\n\nGini\n0.416665\n\n\n\nApós o tunning, o LightGBM alcançou o melhor desempenho absoluto no Teste OOT, com AUC de 0.708 e Gini de 0.417. Este resultado supera o modelo de Regressão Logística (AUC 0.701) e confirma o LightGBM como o modelo mais preditivo para o Scorecard.",
+    "text": "Nesta etapa, o modelo de Regressão Logística escolhido na Etapa 3 é otimizado usando pesquisa de hiperparâmetros e, em seguida, validado no conjunto de Teste Out-of-Time (OOT).\n\n\n\nO modelo foi otimizado utilizando o RandomizedSearchCV com Cross-Validation, buscando maximizar o KS Score, uma métrica crítica para separação de risco\nO processo de tunning focou na regularização do modelo para evitar overfitting e garantir a robustez.\nMelhores Parâmetros Encontrados:\n\n\n\nParâmetro\nValor Otimizado\n\n\n\n\nn_estimators\n800\n\n\nlearning_rate\n0.01\n\n\nsubsample\n0.7\n\n\nreg_alpha / reg_lambda\n0.0 / 0.0\n\n\n\n\n\n\n\nO modelo otimizado foi treinado na base completa de Treino e avaliado no conjunto de Teste OOT, confirmando seu potencial máximo.\n\n\n\nMétrica\nValor\n\n\n\n\nKS\n0.313688\n\n\nAUC\n0.708333\n\n\nGini\n0.416665\n\n\n\nApós o tunning, o LightGBM alcançou o melhor desempenho absoluto no Teste OOT, com AUC de 0.708 e Gini de 0.417. Este resultado supera o modelo de Regressão Logística (AUC 0.701) e confirma o LightGBM como o modelo mais preditivo para o Scorecard.",
     "crumbs": [
       "04. Tunning"
     ]
@@ -159,9 +159,9 @@
   {
     "objectID": "abas/04_tunning.html#estratégia-de-otimização",
     "href": "abas/04_tunning.html#estratégia-de-otimização",
-    "title": "5. 🔬 Tunning e Modelo de Regressão Logística Final",
+    "title": "4. 🔬 Tunning e Modelo de Regressão Logística Final",
     "section": "",
-    "text": "O modelo foi otimizado utilizando o RandomizedSearchCV com Cross-Validation, buscando maximizar o KS Score, uma métrica crítica para separação de risco\nO processo de tunning focou na regularização do modelo para evitar overfitting e garantir a robustez.\nMelhores Parâmetros Encontrados:\n\n\n\nParâmetro\nValor Otimizado\n\n\n\n\nn_estimators\n800\n\n\nlearning_rate\n0.01\n\n\nsubsample\n0.7\n\n\nreg_alpha / reg_lambda\n0.0 / 0.0\n\n\n\n\n\nO modelo otimizado foi treinado na base completa de Treino e avaliado no conjunto de Teste OOT, confirmando seu potencial máximo.\n\n\n\nMétrica\nValor\n\n\n\n\nKS\n0.313688\n\n\nAUC\n0.708333\n\n\nGini\n0.416665\n\n\n\nApós o tunning, o LightGBM alcançou o melhor desempenho absoluto no Teste OOT, com AUC de 0.708 e Gini de 0.417. Este resultado supera o modelo de Regressão Logística (AUC 0.701) e confirma o LightGBM como o modelo mais preditivo para o Scorecard.",
+    "text": "O modelo foi otimizado utilizando o RandomizedSearchCV com Cross-Validation, buscando maximizar o KS Score, uma métrica crítica para separação de risco\nO processo de tunning focou na regularização do modelo para evitar overfitting e garantir a robustez.\nMelhores Parâmetros Encontrados:\n\n\n\nParâmetro\nValor Otimizado\n\n\n\n\nn_estimators\n800\n\n\nlearning_rate\n0.01\n\n\nsubsample\n0.7\n\n\nreg_alpha / reg_lambda\n0.0 / 0.0",
     "crumbs": [
       "04. Tunning"
     ]
@@ -368,6 +368,16 @@
     "text": "KS por Safra\nA análise do KS mês a mês (por safra) é a verificação mais rigorosa da estabilidade preditiva ao longo do tempo.\n\nNota: O KS no Teste OOT (safras 10/2014 a 12/2014) mostra uma queda de performance na última safra (12/2014) (KS = 0.258). Isso pode ser um sinal de forte drift de mercado ou mudança de política de crédito recente, exigindo monitoramento imediato.\nCurva de Calibração\nA curva de calibração verifica se a probabilidade prevista (P(Default)) corresponde à frequência real de default observada.",
     "crumbs": [
       "05. Final Model"
+    ]
+  },
+  {
+    "objectID": "abas/04_tunning.html#performance-final-do-lightgbm-teste-oot",
+    "href": "abas/04_tunning.html#performance-final-do-lightgbm-teste-oot",
+    "title": "4. 🔬 Tunning e Modelo de Regressão Logística Final",
+    "section": "",
+    "text": "O modelo otimizado foi treinado na base completa de Treino e avaliado no conjunto de Teste OOT, confirmando seu potencial máximo.\n\n\n\nMétrica\nValor\n\n\n\n\nKS\n0.313688\n\n\nAUC\n0.708333\n\n\nGini\n0.416665\n\n\n\nApós o tunning, o LightGBM alcançou o melhor desempenho absoluto no Teste OOT, com AUC de 0.708 e Gini de 0.417. Este resultado supera o modelo de Regressão Logística (AUC 0.701) e confirma o LightGBM como o modelo mais preditivo para o Scorecard.",
+    "crumbs": [
+      "04. Tunning"
     ]
   }
 ]

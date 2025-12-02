@@ -51,6 +51,7 @@ website:
 
 format:
   html:
+    embed-resources: true
     theme: flatly
     css: styles.css
     echo: false
