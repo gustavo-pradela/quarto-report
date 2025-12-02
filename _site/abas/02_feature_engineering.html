@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Modelo de Credit Scoring | Case Técnico</title>
+<title>feature_engineering – Modelo de Credit Scoring | Case Técnico</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/bola_verde.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4fa97ab47821152d99d892ea7cd7716f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/bola_verde.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4fa97ab47821152d99d892ea7cd7716f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light">
@@ -81,11 +81,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/model.png" alt="" class="navbar-logo light-content">
-    <img src="./images/model.png" alt="" class="navbar-logo dark-content">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/model.png" alt="" class="navbar-logo light-content">
+    <img src="../images/model.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Modelo de Credit Scoring | Case Técnico</span>
     </a>
   </div>
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">00. Introdução</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../abas/02_feature_engineering.html">02. Feature Enginee</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -121,37 +121,37 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">00. Introdução</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/01_exploratory_data_analysis.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/01_exploratory_data_analysis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">01. Exploratory Data Analysis</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/02_feature_engineering.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/02_feature_engineering.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">02. Feature Enginee</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/03_model_training.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/03_model_training.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">03. Model Training</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/04_tunning.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/04_tunning.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">04. Tunning</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/05_final_model.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/05_final_model.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">05. Final Model</span></a>
   </div>
 </li>
@@ -165,11 +165,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Nesta Página</h2>
    
   <ul>
-  <li><a href="#introdução-construção-do-modelo-de-credit-scoring" id="toc-introdução-construção-do-modelo-de-credit-scoring" class="nav-link active" data-scroll-target="#introdução-construção-do-modelo-de-credit-scoring">📄 Introdução: Construção do Modelo de Credit Scoring</a>
+  <li><a href="#feature-engineering-e-seleção-de-variáveis" id="toc-feature-engineering-e-seleção-de-variáveis" class="nav-link active" data-scroll-target="#feature-engineering-e-seleção-de-variáveis">⚙️ 2. Feature Engineering e Seleção de Variáveis</a>
   <ul class="collapse">
-  <li><a href="#objetivo-central" id="toc-objetivo-central" class="nav-link" data-scroll-target="#objetivo-central">🎯 Objetivo Central</a></li>
-  <li><a href="#estrutura-do-desafio-e-dados" id="toc-estrutura-do-desafio-e-dados" class="nav-link" data-scroll-target="#estrutura-do-desafio-e-dados">📊 Estrutura do Desafio e Dados</a></li>
-  <li><a href="#escopo-e-metodologia-de-risco" id="toc-escopo-e-metodologia-de-risco" class="nav-link" data-scroll-target="#escopo-e-metodologia-de-risco">🛡️ Escopo e Metodologia de Risco</a></li>
+  <li><a href="#filtragem-inicial-missing-constantes-e-ids" id="toc-filtragem-inicial-missing-constantes-e-ids" class="nav-link" data-scroll-target="#filtragem-inicial-missing-constantes-e-ids">2.1. 🧹 Filtragem Inicial (Missing, Constantes e IDs)</a></li>
+  <li><a href="#classificação-de-variáveis-categóricas-vs.-numéricas" id="toc-classificação-de-variáveis-categóricas-vs.-numéricas" class="nav-link" data-scroll-target="#classificação-de-variáveis-categóricas-vs.-numéricas">2.2. 🗂️ Classificação de Variáveis (Categóricas vs.&nbsp;Numéricas)</a>
+  <ul class="collapse">
+  <li><a href="#metodologia-por-cardinalidade" id="toc-metodologia-por-cardinalidade" class="nav-link" data-scroll-target="#metodologia-por-cardinalidade">2.2.1. Metodologia por Cardinalidade</a></li>
+  <li><a href="#conversão-de-tipo" id="toc-conversão-de-tipo" class="nav-link" data-scroll-target="#conversão-de-tipo">2.2.2. Conversão de Tipo</a></li>
+  </ul></li>
+  <li><a href="#filtragem-por-baixa-variância-e-duplicatas" id="toc-filtragem-por-baixa-variância-e-duplicatas" class="nav-link" data-scroll-target="#filtragem-por-baixa-variância-e-duplicatas">2.3. 📉 Filtragem por Baixa Variância e Duplicatas</a></li>
+  <li><a href="#tratamento-de-multicolinearidade-alta-correlação" id="toc-tratamento-de-multicolinearidade-alta-correlação" class="nav-link" data-scroll-target="#tratamento-de-multicolinearidade-alta-correlação">2.4. 🔗 Tratamento de Multicolinearidade (Alta Correlação)</a></li>
+  <li><a href="#population-stability-index-psi" id="toc-population-stability-index-psi" class="nav-link" data-scroll-target="#population-stability-index-psi">2.5. 📈 Population Stability Index (PSI)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -180,29 +186,163 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="introdução-construção-do-modelo-de-credit-scoring" class="level1">
-<h1>📄 Introdução: Construção do Modelo de Credit Scoring</h1>
-<p>O presente relatório técnico detalha a <strong>construção e validação</strong> de um modelo de <strong><em>Credit Scoring</em></strong> desenvolvido para apoiar a tomada de decisão em concessão de crédito.</p>
-<section id="objetivo-central" class="level2">
-<h2 class="anchored" data-anchor-id="objetivo-central">🎯 Objetivo Central</h2>
-<p>O objetivo primário é estimar a probabilidade de inadimplência (default) de clientes em potencial, fornecendo um score robusto e interpretável que permita a automação e otimização das políticas de risco do banco.</p>
+<section id="feature-engineering-e-seleção-de-variáveis" class="level1">
+<h1>⚙️ 2. Feature Engineering e Seleção de Variáveis</h1>
+<p>Esta seção detalha as <strong>técnicas de pré-processamento e seleção</strong> aplicadas para garantir um conjunto de features robusto e de alta qualidade para a modelagem. O objetivo é remover ruídos, redundâncias e variáveis instáveis.</p>
+<hr>
+<section id="filtragem-inicial-missing-constantes-e-ids" class="level2">
+<h2 class="anchored" data-anchor-id="filtragem-inicial-missing-constantes-e-ids">2.1. 🧹 Filtragem Inicial (Missing, Constantes e IDs)</h2>
+<p>O primeiro passo foi remover variáveis que não agregam valor preditivo ou que apresentam alta incerteza devido à falta de dados.</p>
+<p><strong>Critério de Descarte adotado para Missing Values:</strong> Variáveis com mais de 60% de valores ausentes foram descartadas.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 29%">
+<col style="width: 23%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Tipo de Variável Removida</th>
+<th style="text-align: center;">Contagem</th>
+<th style="text-align: left;">Exemplo</th>
+<th style="text-align: left;">Justificativa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Alto Missing</strong> (&gt;60%)</td>
+<td style="text-align: center;"><strong>19</strong></td>
+<td style="text-align: left;"><code>VAR_62</code>, <code>VAR_70</code>, etc.</td>
+<td style="text-align: left;">Alta incerteza e baixa confiabilidade estatística.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Constante</strong></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Não há variáveis com valor único.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>ID-Like</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><code>ID_COL</code></td>
+<td style="text-align: left;">Variáveis únicas por linha não carregam informação generalizável.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>19 features foram removidas</strong>, resultando em <strong>62</strong> features restantes para a análise (81 originais - 19 removidas).</p>
+<hr>
 </section>
-<section id="estrutura-do-desafio-e-dados" class="level2">
-<h2 class="anchored" data-anchor-id="estrutura-do-desafio-e-dados">📊 Estrutura do Desafio e Dados</h2>
-<p>A base de dados utilizada compõe-se de 10.738 registros e 81 variáveis mascaradas. O desenvolvimento do modelo é guiado pela necessidade de transparência e interpretabilidade, que são cruciais para a governança e auditoria regulatória em instituições financeiras.</p>
-</section>
-<section id="escopo-e-metodologia-de-risco" class="level2">
-<h2 class="anchored" data-anchor-id="escopo-e-metodologia-de-risco">🛡️ Escopo e Metodologia de Risco</h2>
-<p>O projeto abrange o fluxo completo de Data Science, focado em entregar um modelo de Credit Scoring estável e aplicável ao negócio.</p>
-<p>A metodologia é estruturada em <strong>quatro pilares</strong>:</p>
+<section id="classificação-de-variáveis-categóricas-vs.-numéricas" class="level2">
+<h2 class="anchored" data-anchor-id="classificação-de-variáveis-categóricas-vs.-numéricas">2.2. 🗂️ Classificação de Variáveis (Categóricas vs.&nbsp;Numéricas)</h2>
+<p>A classificação correta das variáveis é um <strong>passo essencial</strong> para garantir que o pré-processamento subsequente seja aplicado de forma adequada (ex: One-Hot Encoding para categóricas, Scaling para numéricas).</p>
+<section id="metodologia-por-cardinalidade" class="level3">
+<h3 class="anchored" data-anchor-id="metodologia-por-cardinalidade">2.2.1. Metodologia por Cardinalidade</h3>
+<p>Dada a <strong>natureza mascarada das features</strong>, a distinção entre variáveis contínuas e discretas foi feita utilizando a <strong>Cardinalidade</strong> (número de valores únicos) como critério principal.</p>
+<p><strong>Threshold Definido:</strong> Foi estabelecido um threshold de <strong>25</strong> valores únicos.</p>
 <blockquote class="blockquote">
-<ol type="1">
-<li><p><strong>Pré-processamento:</strong> Tratamento de dados, remoção de redundâncias (Multicolinearidade) e análise de estabilidade das variáveis (PSI).</p></li>
-<li><p><strong>Modelagem e Seleção:</strong> Comparação de algoritmos (priorizando estabilidade e interpretabilidade) para identificar o melhor preditor.</p></li>
-<li><p><strong>Validação OOT:</strong> Teste rigoroso de desempenho em um conjunto Out-of-Time (OOT) (safras Outubro, Novembro e Dezembro), crucial para simular o risco futuro e comprovar a estabilidade temporal.</p></li>
-<li><p><strong>Recomendação:</strong> Análise final de métricas (AUC, Gini, KS) e calibração para definir o Scorecard e o ponto de corte ideal para a tomada de decisão de crédito.</p></li>
-</ol>
+<p><strong>Variáveis Categóricas (CAT_VARS):</strong> Features com até 25 valores únicos foram classificadas como categóricas, pois representam um conjunto discreto e gerenciável de classes.</p>
+<p><strong>Variáveis Numéricas (NUM_VARS):</strong> Features com mais de 25 valores únicos foram classificadas como numéricas, indicando uma distribuição de dados contínua ou de alta variância.</p>
 </blockquote>
+</section>
+<section id="conversão-de-tipo" class="level3">
+<h3 class="anchored" data-anchor-id="conversão-de-tipo">2.2.2. Conversão de Tipo</h3>
+<p>Após a classificação, as features em <strong>CAT_VARS</strong> foram explicitamente convertidas para o tipo object (tipo Python para string ou categoria). Esta conversão é necessária para garantir que os pipelines de pré-processamento (como OneHotEncoder ou o uso futuro de WOE) as tratem corretamente, independentemente de seu tipo original.</p>
+<hr>
+</section>
+</section>
+<section id="filtragem-por-baixa-variância-e-duplicatas" class="level2">
+<h2 class="anchored" data-anchor-id="filtragem-por-baixa-variância-e-duplicatas">2.3. 📉 Filtragem por Baixa Variância e Duplicatas</h2>
+<p>Variáveis com baixíssima variação (proximidade de valor constante) não distinguem bem os clientes e são removidas.</p>
+<p><strong>Baixa Variância:</strong> Foi definido um threshold de 0.001. Apenas <strong>1</strong> feature foi removida por ter variância muito próxima de zero.</p>
+<p>A base não possui colunas duplicadas.</p>
+<hr>
+</section>
+<section id="tratamento-de-multicolinearidade-alta-correlação" class="level2">
+<h2 class="anchored" data-anchor-id="tratamento-de-multicolinearidade-alta-correlação">2.4. 🔗 Tratamento de Multicolinearidade (Alta Correlação)</h2>
+<p>A multicolinearidade entre features numéricas é <strong>prejudicial</strong> para a modelagem, pois torna os coeficientes do modelo instáveis e difíceis de interpretar.</p>
+<p><strong>Critério de Descarte:</strong> Manter apenas <strong>uma</strong> variável de cada par que apresentava correlação absoluta superior a 0.9 na base de Treino.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">var1</th>
+<th style="text-align: left;">var2</th>
+<th style="text-align: center;">corr</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>VAR_74</code></td>
+<td style="text-align: left;"><code>VAR_78</code></td>
+<td style="text-align: center;">0.998554</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>VAR_71</code></td>
+<td style="text-align: left;"><code>VAR_73</code></td>
+<td style="text-align: center;">0.997062</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>VAR_57</code></td>
+<td style="text-align: left;"><code>VAR_60</code></td>
+<td style="text-align: center;">0.991046</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>VAR_19</code></td>
+<td style="text-align: left;"><code>VAR_22</code></td>
+<td style="text-align: center;">0.975977</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>VAR_10</code></td>
+<td style="text-align: left;"><code>VAR_69</code></td>
+<td style="text-align: center;">0.975103</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>VAR_24</code></td>
+<td style="text-align: left;"><code>VAR_58</code></td>
+<td style="text-align: center;">0.974130</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>VAR_25</code></td>
+<td style="text-align: left;"><code>VAR_28</code></td>
+<td style="text-align: center;">0.972608</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>VAR_39</code></td>
+<td style="text-align: left;"><code>VAR_45</code></td>
+<td style="text-align: center;">0.972208</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>VAR_40</code></td>
+<td style="text-align: left;"><code>VAR_44</code></td>
+<td style="text-align: center;">0.968908</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>VAR_14</code></td>
+<td style="text-align: left;"><code>VAR_26</code></td>
+<td style="text-align: center;">0.954847</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>VAR_44</code></td>
+<td style="text-align: left;"><code>VAR_64</code></td>
+<td style="text-align: center;">0.904339</td>
+</tr>
+</tbody>
+</table>
+<p><strong>11 features foram removidas</strong> devido à alta correlação. O conjunto de dados final possui 50 features candidatas (61 restantes - 11 removidas).</p>
+<hr>
+</section>
+<section id="population-stability-index-psi" class="level2">
+<h2 class="anchored" data-anchor-id="population-stability-index-psi">2.5. 📈 Population Stability Index (PSI)</h2>
+<p>A estabilidade das features entre a amostra de Treino e a amostra de Teste (Out-of-Time) é crítica para a robustez do modelo. Utilizei o Population Stability Index (PSI).</p>
+<p><strong>PSI:</strong> O PSI mede o drift (deslocamento) na distribuição de uma variável entre duas populações.</p>
+<blockquote class="blockquote">
+<p>PSI &lt; 0.1: <strong>Distribuição Estável</strong></p>
+<p>0.1 &lt; ou = PSI &lt; 0.25: <strong>Mudança Moderada</strong></p>
+<p>PSI &gt; ou = 0.25: <strong>Mudança Forte</strong></p>
+</blockquote>
+<p>Nenhuma feature atingiu o limite de Mudança Forte. As variáveis <strong>VAR_30</strong> e <strong>VAR_1</strong> apresentam Mudança Moderada. Embora não sejam descartadas neste momento, elas serão monitoradas na próxima etapa.</p>
+<p><strong>Conclusão e Próxima Etapa:</strong> Após o processo de Feature Engineering e Seleção, o número de variáveis preditoras foi <strong>reduzido de 78 para 47 features</strong> (além das colunas protegidas).</p>
+<hr>
 
 
 </section>

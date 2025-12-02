@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Modelo de Credit Scoring | Case Técnico</title>
+<title>exploratory_data_analysis – Modelo de Credit Scoring | Case Técnico</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/bola_verde.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4fa97ab47821152d99d892ea7cd7716f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/bola_verde.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4fa97ab47821152d99d892ea7cd7716f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light">
@@ -81,11 +81,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/model.png" alt="" class="navbar-logo light-content">
-    <img src="./images/model.png" alt="" class="navbar-logo dark-content">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/model.png" alt="" class="navbar-logo light-content">
+    <img src="../images/model.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Modelo de Credit Scoring | Case Técnico</span>
     </a>
   </div>
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">00. Introdução</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../abas/01_exploratory_data_analysis.html">01. Exploratory Data Analysis</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -121,37 +121,37 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">00. Introdução</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/01_exploratory_data_analysis.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/01_exploratory_data_analysis.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">01. Exploratory Data Analysis</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/02_feature_engineering.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/02_feature_engineering.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">02. Feature Enginee</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/03_model_training.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/03_model_training.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">03. Model Training</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/04_tunning.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/04_tunning.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">04. Tunning</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/05_final_model.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/05_final_model.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">05. Final Model</span></a>
   </div>
 </li>
@@ -165,11 +165,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Nesta Página</h2>
    
   <ul>
-  <li><a href="#introdução-construção-do-modelo-de-credit-scoring" id="toc-introdução-construção-do-modelo-de-credit-scoring" class="nav-link active" data-scroll-target="#introdução-construção-do-modelo-de-credit-scoring">📄 Introdução: Construção do Modelo de Credit Scoring</a>
+  <li><a href="#análise-exploratória-de-dados-eda" id="toc-análise-exploratória-de-dados-eda" class="nav-link active" data-scroll-target="#análise-exploratória-de-dados-eda">1. 📄 Análise Exploratória de Dados (EDA)</a>
   <ul class="collapse">
-  <li><a href="#objetivo-central" id="toc-objetivo-central" class="nav-link" data-scroll-target="#objetivo-central">🎯 Objetivo Central</a></li>
-  <li><a href="#estrutura-do-desafio-e-dados" id="toc-estrutura-do-desafio-e-dados" class="nav-link" data-scroll-target="#estrutura-do-desafio-e-dados">📊 Estrutura do Desafio e Dados</a></li>
-  <li><a href="#escopo-e-metodologia-de-risco" id="toc-escopo-e-metodologia-de-risco" class="nav-link" data-scroll-target="#escopo-e-metodologia-de-risco">🛡️ Escopo e Metodologia de Risco</a></li>
+  <li><a href="#definição-do-target-e-distribuição-da-amostra" id="toc-definição-do-target-e-distribuição-da-amostra" class="nav-link" data-scroll-target="#definição-do-target-e-distribuição-da-amostra">1.1. 🎯 Definição do Target e Distribuição da Amostra</a></li>
+  <li><a href="#estabilidade-temporal-da-inadimplência-análise-por-safra" id="toc-estabilidade-temporal-da-inadimplência-análise-por-safra" class="nav-link" data-scroll-target="#estabilidade-temporal-da-inadimplência-análise-por-safra">1.2. 📈 Estabilidade Temporal da Inadimplência (Análise por Safra)</a></li>
+  <li><a href="#estabilidade-das-variáveis-por-safra" id="toc-estabilidade-das-variáveis-por-safra" class="nav-link" data-scroll-target="#estabilidade-das-variáveis-por-safra">1.3. 📈 Estabilidade das Variáveis por Safra</a></li>
+  <li><a href="#qualidade-e-saúde-dos-dados-valores-ausentes" id="toc-qualidade-e-saúde-dos-dados-valores-ausentes" class="nav-link" data-scroll-target="#qualidade-e-saúde-dos-dados-valores-ausentes">1.4. 🛠️ Qualidade e Saúde dos Dados (Valores Ausentes)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -180,29 +181,64 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="introdução-construção-do-modelo-de-credit-scoring" class="level1">
-<h1>📄 Introdução: Construção do Modelo de Credit Scoring</h1>
-<p>O presente relatório técnico detalha a <strong>construção e validação</strong> de um modelo de <strong><em>Credit Scoring</em></strong> desenvolvido para apoiar a tomada de decisão em concessão de crédito.</p>
-<section id="objetivo-central" class="level2">
-<h2 class="anchored" data-anchor-id="objetivo-central">🎯 Objetivo Central</h2>
-<p>O objetivo primário é estimar a probabilidade de inadimplência (default) de clientes em potencial, fornecendo um score robusto e interpretável que permita a automação e otimização das políticas de risco do banco.</p>
-</section>
-<section id="estrutura-do-desafio-e-dados" class="level2">
-<h2 class="anchored" data-anchor-id="estrutura-do-desafio-e-dados">📊 Estrutura do Desafio e Dados</h2>
-<p>A base de dados utilizada compõe-se de 10.738 registros e 81 variáveis mascaradas. O desenvolvimento do modelo é guiado pela necessidade de transparência e interpretabilidade, que são cruciais para a governança e auditoria regulatória em instituições financeiras.</p>
-</section>
-<section id="escopo-e-metodologia-de-risco" class="level2">
-<h2 class="anchored" data-anchor-id="escopo-e-metodologia-de-risco">🛡️ Escopo e Metodologia de Risco</h2>
-<p>O projeto abrange o fluxo completo de Data Science, focado em entregar um modelo de Credit Scoring estável e aplicável ao negócio.</p>
-<p>A metodologia é estruturada em <strong>quatro pilares</strong>:</p>
+<section id="análise-exploratória-de-dados-eda" class="level1">
+<h1>1. 📄 Análise Exploratória de Dados (EDA)</h1>
+<p>Este capítulo apresenta a <strong>estrutura da base de dados</strong>, a definição da <strong>variável alvo (target)</strong> e as análises iniciais de qualidade e distribuição de risco.</p>
+<hr>
+<section id="definição-do-target-e-distribuição-da-amostra" class="level2">
+<h2 class="anchored" data-anchor-id="definição-do-target-e-distribuição-da-amostra">1.1. 🎯 Definição do Target e Distribuição da Amostra</h2>
+<p>A base de dados bruta contém <strong>10.738 observações</strong> e <strong>81 colunas</strong> (incluindo id, safra e features).</p>
+<p><strong>Definição da Variável Alvo (y)</strong></p>
 <blockquote class="blockquote">
-<ol type="1">
-<li><p><strong>Pré-processamento:</strong> Tratamento de dados, remoção de redundâncias (Multicolinearidade) e análise de estabilidade das variáveis (PSI).</p></li>
-<li><p><strong>Modelagem e Seleção:</strong> Comparação de algoritmos (priorizando estabilidade e interpretabilidade) para identificar o melhor preditor.</p></li>
-<li><p><strong>Validação OOT:</strong> Teste rigoroso de desempenho em um conjunto Out-of-Time (OOT) (safras Outubro, Novembro e Dezembro), crucial para simular o risco futuro e comprovar a estabilidade temporal.</p></li>
-<li><p><strong>Recomendação:</strong> Análise final de métricas (AUC, Gini, KS) e calibração para definir o Scorecard e o ponto de corte ideal para a tomada de decisão de crédito.</p></li>
-</ol>
+<p>y = 1 (Mau Pagador): <strong>Inadimplência (default)</strong></p>
+<p>y = 0 (Bom Pagador): <strong>Não-inadimplência</strong></p>
 </blockquote>
+<p>A Taxa de <strong>Inadimplência Global</strong> da amostra é de <strong>29,13%</strong>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Classe</th>
+<th style="text-align: left;">Contagem Absoluta</th>
+<th style="text-align: left;">Proporção</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">0 (Bom Pagador)</td>
+<td style="text-align: left;">7.610</td>
+<td style="text-align: left;">70,87%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1 (Mau Pagador)</td>
+<td style="text-align: left;">3.128</td>
+<td style="text-align: left;">29,13%</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="estabilidade-temporal-da-inadimplência-análise-por-safra" class="level2">
+<h2 class="anchored" data-anchor-id="estabilidade-temporal-da-inadimplência-análise-por-safra">1.2. 📈 Estabilidade Temporal da Inadimplência (Análise por Safra)</h2>
+<p>A análise do risco ao longo do tempo (safra) é crucial em crédito. A base abrange <strong>12 meses</strong>, de 01/2014 a 12/2014.</p>
+<p>O gráfico abaixo mostra a variação da taxa de inadimplência (média de y) em cada safra.</p>
+<p><img src="../images/image-1.png" class="img-fluid"></p>
+<p>A taxa de inadimplência demonstra uma <strong>tendência de aumento nas safras finais</strong> (11/2014 e 12/2014), atingindo o pico de <strong>35,24%</strong> na última safra. Este pico é significativamente maior do que a média da amostra (29,13%), sugerindo uma possível instabilidade temporal ou uma mudança no perfil de risco dos clientes mais recentes.</p>
+<hr>
+</section>
+<section id="estabilidade-das-variáveis-por-safra" class="level2">
+<h2 class="anchored" data-anchor-id="estabilidade-das-variáveis-por-safra">1.3. 📈 Estabilidade das Variáveis por Safra</h2>
+<p>Para garantir que o modelo de Credit Scoring seja robusto ao longo do tempo, é essencial monitorar as features mais preditivas e verificar se suas distribuições se mantêm estáveis ao longo das safras.</p>
+<p>Gráfico de estabilidade da <strong>VAR_1</strong>:</p>
+<p><img src="../images/image-4.png" class="img-fluid"></p>
+<hr>
+</section>
+<section id="qualidade-e-saúde-dos-dados-valores-ausentes" class="level2">
+<h2 class="anchored" data-anchor-id="qualidade-e-saúde-dos-dados-valores-ausentes">1.4. 🛠️ Qualidade e Saúde dos Dados (Valores Ausentes)</h2>
+<p>A qualidade dos dados foi avaliada, com foco na presença de valores ausentes (Missing Values).</p>
+<p><strong>Total de Features Analisadas:</strong> 78 <strong>Amostra Total:</strong> 10.738 linhas</p>
+<p><img src="../images/image.png" class="img-fluid"></p>
+<p><strong>Conclusão e Próxima Etapa:</strong> Há uma grande quantidade de variáveis com uma alta percentagem de valores ausentes (mais de 50%). Na fase 02_feature_engineering.ipynb, será necessário definir um limite de corte para descarte de variáveis.</p>
+<hr>
 
 
 </section>

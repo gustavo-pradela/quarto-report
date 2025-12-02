@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Modelo de Credit Scoring | Case Técnico</title>
+<title>model_training – Modelo de Credit Scoring | Case Técnico</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/bola_verde.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4fa97ab47821152d99d892ea7cd7716f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/bola_verde.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4fa97ab47821152d99d892ea7cd7716f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light">
@@ -81,11 +81,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/model.png" alt="" class="navbar-logo light-content">
-    <img src="./images/model.png" alt="" class="navbar-logo dark-content">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/model.png" alt="" class="navbar-logo light-content">
+    <img src="../images/model.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Modelo de Credit Scoring | Case Técnico</span>
     </a>
   </div>
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">00. Introdução</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../abas/03_model_training.html">03. Model Training</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -121,37 +121,37 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">00. Introdução</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/01_exploratory_data_analysis.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/01_exploratory_data_analysis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">01. Exploratory Data Analysis</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/02_feature_engineering.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/02_feature_engineering.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">02. Feature Enginee</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/03_model_training.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/03_model_training.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">03. Model Training</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/04_tunning.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/04_tunning.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">04. Tunning</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/05_final_model.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/05_final_model.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">05. Final Model</span></a>
   </div>
 </li>
@@ -165,11 +165,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Nesta Página</h2>
    
   <ul>
-  <li><a href="#introdução-construção-do-modelo-de-credit-scoring" id="toc-introdução-construção-do-modelo-de-credit-scoring" class="nav-link active" data-scroll-target="#introdução-construção-do-modelo-de-credit-scoring">📄 Introdução: Construção do Modelo de Credit Scoring</a>
+  <li><a href="#modelagem-e-seleção-final-do-modelo" id="toc-modelagem-e-seleção-final-do-modelo" class="nav-link active" data-scroll-target="#modelagem-e-seleção-final-do-modelo">🧠 3. Modelagem e Seleção Final do Modelo</a>
   <ul class="collapse">
-  <li><a href="#objetivo-central" id="toc-objetivo-central" class="nav-link" data-scroll-target="#objetivo-central">🎯 Objetivo Central</a></li>
-  <li><a href="#estrutura-do-desafio-e-dados" id="toc-estrutura-do-desafio-e-dados" class="nav-link" data-scroll-target="#estrutura-do-desafio-e-dados">📊 Estrutura do Desafio e Dados</a></li>
-  <li><a href="#escopo-e-metodologia-de-risco" id="toc-escopo-e-metodologia-de-risco" class="nav-link" data-scroll-target="#escopo-e-metodologia-de-risco">🛡️ Escopo e Metodologia de Risco</a></li>
+  <li><a href="#pré-processamento-e-pipelines" id="toc-pré-processamento-e-pipelines" class="nav-link" data-scroll-target="#pré-processamento-e-pipelines">3.1. 🔬 Pré-processamento e Pipelines</a></li>
+  <li><a href="#seleção-final-de-variáveis-random-forest" id="toc-seleção-final-de-variáveis-random-forest" class="nav-link" data-scroll-target="#seleção-final-de-variáveis-random-forest">3.2. 🌳 Seleção Final de Variáveis (Random Forest)</a></li>
+  <li><a href="#avaliação-comparativa-de-modelos-cross-validation" id="toc-avaliação-comparativa-de-modelos-cross-validation" class="nav-link" data-scroll-target="#avaliação-comparativa-de-modelos-cross-validation">3.3. 🆚 Avaliação Comparativa de Modelos (Cross-Validation)</a>
+  <ul class="collapse">
+  <li><a href="#métricas-de-desempenho" id="toc-métricas-de-desempenho" class="nav-link" data-scroll-target="#métricas-de-desempenho">3.3.1. Métricas de Desempenho</a></li>
+  </ul></li>
+  <li><a href="#validação-final-teste-oot" id="toc-validação-final-teste-oot" class="nav-link" data-scroll-target="#validação-final-teste-oot">3.4. 🛡️ Validação Final (Teste OOT)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -180,29 +184,143 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="introdução-construção-do-modelo-de-credit-scoring" class="level1">
-<h1>📄 Introdução: Construção do Modelo de Credit Scoring</h1>
-<p>O presente relatório técnico detalha a <strong>construção e validação</strong> de um modelo de <strong><em>Credit Scoring</em></strong> desenvolvido para apoiar a tomada de decisão em concessão de crédito.</p>
-<section id="objetivo-central" class="level2">
-<h2 class="anchored" data-anchor-id="objetivo-central">🎯 Objetivo Central</h2>
-<p>O objetivo primário é estimar a probabilidade de inadimplência (default) de clientes em potencial, fornecendo um score robusto e interpretável que permita a automação e otimização das políticas de risco do banco.</p>
-</section>
-<section id="estrutura-do-desafio-e-dados" class="level2">
-<h2 class="anchored" data-anchor-id="estrutura-do-desafio-e-dados">📊 Estrutura do Desafio e Dados</h2>
-<p>A base de dados utilizada compõe-se de 10.738 registros e 81 variáveis mascaradas. O desenvolvimento do modelo é guiado pela necessidade de transparência e interpretabilidade, que são cruciais para a governança e auditoria regulatória em instituições financeiras.</p>
-</section>
-<section id="escopo-e-metodologia-de-risco" class="level2">
-<h2 class="anchored" data-anchor-id="escopo-e-metodologia-de-risco">🛡️ Escopo e Metodologia de Risco</h2>
-<p>O projeto abrange o fluxo completo de Data Science, focado em entregar um modelo de Credit Scoring estável e aplicável ao negócio.</p>
-<p>A metodologia é estruturada em <strong>quatro pilares</strong>:</p>
+<section id="modelagem-e-seleção-final-do-modelo" class="level1">
+<h1>🧠 3. Modelagem e Seleção Final do Modelo</h1>
+<p>Esta seção detalha o <strong>pré-processamento final das features</strong>, a seleção de variáveis baseada em importância e a avaliação comparativa de diferentes algoritmos de Machine Learning.</p>
+<hr>
+<section id="pré-processamento-e-pipelines" class="level2">
+<h2 class="anchored" data-anchor-id="pré-processamento-e-pipelines">3.1. 🔬 Pré-processamento e Pipelines</h2>
+<p>Todas as 47 features restantes foram submetidas a um Pipeline de pré-processamento padrão:</p>
 <blockquote class="blockquote">
-<ol type="1">
-<li><p><strong>Pré-processamento:</strong> Tratamento de dados, remoção de redundâncias (Multicolinearidade) e análise de estabilidade das variáveis (PSI).</p></li>
-<li><p><strong>Modelagem e Seleção:</strong> Comparação de algoritmos (priorizando estabilidade e interpretabilidade) para identificar o melhor preditor.</p></li>
-<li><p><strong>Validação OOT:</strong> Teste rigoroso de desempenho em um conjunto Out-of-Time (OOT) (safras Outubro, Novembro e Dezembro), crucial para simular o risco futuro e comprovar a estabilidade temporal.</p></li>
-<li><p><strong>Recomendação:</strong> Análise final de métricas (AUC, Gini, KS) e calibração para definir o Scorecard e o ponto de corte ideal para a tomada de decisão de crédito.</p></li>
-</ol>
+<p><strong>Imputação de Missing Values:</strong> Utilização da mediana para preencher valores ausentes nas variáveis numéricas e moda nas variáveis categóricas.</p>
+<p><strong>Padronização (StandardScaler e One-Hot Encoding):</strong> Aplicação do StandardScaler para normalizar as features númericas e One-Hot Encoding para as features categóricas.</p>
 </blockquote>
+<hr>
+</section>
+<section id="seleção-final-de-variáveis-random-forest" class="level2">
+<h2 class="anchored" data-anchor-id="seleção-final-de-variáveis-random-forest">3.2. 🌳 Seleção Final de Variáveis (Random Forest)</h2>
+<p>Para refinar o modelo e reduzir a complexidade e o risco de overfitting, foi utilizado um modelo Random Forest para ranquear as features por importância (Feature Importance).</p>
+<p>Objetivo: Selecionar as Top K=20 variáveis que mais contribuem para a separação entre <em>Bons</em> e <em>Maus Pagadores</em>.</p>
+<p><img src="../images/image-2.png" class="img-fluid"></p>
+<p>O dataset para o treinamento final foi <strong>reduzido de 47 para 20 features</strong>, focado nas variáveis com maior <em>poder preditivo</em>.</p>
+<hr>
+</section>
+<section id="avaliação-comparativa-de-modelos-cross-validation" class="level2">
+<h2 class="anchored" data-anchor-id="avaliação-comparativa-de-modelos-cross-validation">3.3. 🆚 Avaliação Comparativa de Modelos (Cross-Validation)</h2>
+<p>Quatro modelos foram comparados utilizando Cross-Validation Estratificada (5 splits) no conjunto de Treino (X_train_sel).</p>
+<section id="métricas-de-desempenho" class="level3">
+<h3 class="anchored" data-anchor-id="métricas-de-desempenho">3.3.1. Métricas de Desempenho</h3>
+<p>Em Credit Scoring, as métricas de ranking são priorizadas:</p>
+<blockquote class="blockquote">
+<p><strong>AUC (Area Under the Curve):</strong> Probabilidade de o modelo ranquear um par aleatório (Mau Pagador, Bom Pagador) na ordem correta.</p>
+<p><strong>Gini Coefficient:</strong> Mede a separação das distribuições.</p>
+<p><strong>KS (Kolmogorov-Smirnov):</strong> Mede a separação máxima entre as distribuições acumuladas de <em>Bons</em> e <em>Maus Pagadores</em>.</p>
+</blockquote>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Modelo</th>
+<th style="text-align: center;">KS Médio</th>
+<th style="text-align: center;">KS Desvio</th>
+<th style="text-align: center;">AUC Médio</th>
+<th style="text-align: center;">AUC Desvio</th>
+<th style="text-align: center;">Gini Médio</th>
+<th style="text-align: center;">Gini Desvio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>LightGBM</strong></td>
+<td style="text-align: center;"><strong>0.447</strong></td>
+<td style="text-align: center;">0.022</td>
+<td style="text-align: center;"><strong>0.796</strong></td>
+<td style="text-align: center;">0.011</td>
+<td style="text-align: center;"><strong>0.593</strong></td>
+<td style="text-align: center;">0.022</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Logistic Regression</td>
+<td style="text-align: center;">0.424</td>
+<td style="text-align: center;">0.013</td>
+<td style="text-align: center;">0.786</td>
+<td style="text-align: center;">0.011</td>
+<td style="text-align: center;">0.571</td>
+<td style="text-align: center;">0.022</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Random Forest</td>
+<td style="text-align: center;">0.433</td>
+<td style="text-align: center;">0.019</td>
+<td style="text-align: center;">0.785</td>
+<td style="text-align: center;">0.009</td>
+<td style="text-align: center;">0.569</td>
+<td style="text-align: center;">0.017</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">XGBoost</td>
+<td style="text-align: center;">0.424</td>
+<td style="text-align: center;">0.034</td>
+<td style="text-align: center;">0.783</td>
+<td style="text-align: center;">0.015</td>
+<td style="text-align: center;">0.566</td>
+<td style="text-align: center;">0.029</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conclusão do Treino:</strong> O LightGBM demonstrou o melhor desempenho preditivo bruto, estabelecendo o teto da performance com o maior AUC (0.796) e Gini (0.593). A Regressão Logística e o Random Forest se mostraram altamente competitivos, ficando a menos de 1 ponto percentual de distância no AUC.</p>
+<hr>
+</section>
+</section>
+<section id="validação-final-teste-oot" class="level2">
+<h2 class="anchored" data-anchor-id="validação-final-teste-oot">3.4. 🛡️ Validação Final (Teste OOT)</h2>
+<p>A performance de cada modelo foi avaliada no conjunto de <strong>Teste (Out-of-Time - OOT)</strong>, que representa o ambiente de risco futuro. A estabilidade é medida pela capacidade do modelo de reter seu poder preditivo em dados futuros (OOT).</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Modelo</th>
+<th style="text-align: center;">KS</th>
+<th style="text-align: center;">AUC</th>
+<th style="text-align: center;">Gini</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>LightGBM</strong></td>
+<td style="text-align: center;"><strong>0.306</strong></td>
+<td style="text-align: center;"><strong>0.704</strong></td>
+<td style="text-align: center;"><strong>0.407</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Logistic Regression</td>
+<td style="text-align: center;">0.294</td>
+<td style="text-align: center;">0.701</td>
+<td style="text-align: center;">0.402</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Random Forest</td>
+<td style="text-align: center;">0.265</td>
+<td style="text-align: center;">0.685</td>
+<td style="text-align: center;">0.369</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">XGBoost</td>
+<td style="text-align: center;">0.255</td>
+<td style="text-align: center;">0.668</td>
+<td style="text-align: center;">0.337</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conclusão:</strong> Devido a sua performance superior, o <strong>LightGBM é o modelo escolhido para o Credit Scoring final.</strong></p>
+<hr>
 
 
 </section>

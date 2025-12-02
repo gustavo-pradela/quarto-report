@@ -34,5 +34,29 @@
   },
   "abas/07_avaliacao_final.qmd": {
     "07_avaliacao_final.html": "ed32771b"
+  },
+  "abas/01_estrutura_do_projeto.md": {
+    "01_estrutura_do_projeto.html": "b884228a"
+  },
+  "abas/02_feature_engineering.md": {
+    "02_feature_engineering.html": "c53d5cf1"
+  },
+  "abas/03_model_training.md": {
+    "03_model_training.html": "87b195bc"
+  },
+  "abas/05_final_model.md": {
+    "05_final_model.html": "6448ed40"
+  },
+  "abas/04_tunning.md": {
+    "04_tunning.html": "955f1685"
+  },
+  "abas/00_introducao.md": {
+    "00_introducao.html": "eb59b591"
+  },
+  "index.md": {
+    "index.html": "8ce9eb5f"
+  },
+  "abas/01_exploratory_data_analysis.md": {
+    "01_exploratory_data_analysis.html": "7263eb59"
   }
 }

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Modelo de Credit Scoring | Case Técnico</title>
+<title>final_model – Modelo de Credit Scoring | Case Técnico</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/bola_verde.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4fa97ab47821152d99d892ea7cd7716f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/bola_verde.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4fa97ab47821152d99d892ea7cd7716f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light">
@@ -81,11 +81,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/model.png" alt="" class="navbar-logo light-content">
-    <img src="./images/model.png" alt="" class="navbar-logo dark-content">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/model.png" alt="" class="navbar-logo light-content">
+    <img src="../images/model.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Modelo de Credit Scoring | Case Técnico</span>
     </a>
   </div>
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">00. Introdução</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../abas/05_final_model.html">05. Final Model</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -121,37 +121,37 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">00. Introdução</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/01_exploratory_data_analysis.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/01_exploratory_data_analysis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">01. Exploratory Data Analysis</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/02_feature_engineering.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/02_feature_engineering.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">02. Feature Enginee</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/03_model_training.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/03_model_training.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">03. Model Training</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/04_tunning.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/04_tunning.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">04. Tunning</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abas/05_final_model.html" class="sidebar-item-text sidebar-link">
+  <a href="../abas/05_final_model.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">05. Final Model</span></a>
   </div>
 </li>
@@ -165,11 +165,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Nesta Página</h2>
    
   <ul>
-  <li><a href="#introdução-construção-do-modelo-de-credit-scoring" id="toc-introdução-construção-do-modelo-de-credit-scoring" class="nav-link active" data-scroll-target="#introdução-construção-do-modelo-de-credit-scoring">📄 Introdução: Construção do Modelo de Credit Scoring</a>
+  <li><a href="#validação-do-modelo-final-lightgbm" id="toc-validação-do-modelo-final-lightgbm" class="nav-link active" data-scroll-target="#validação-do-modelo-final-lightgbm">5. 🚀 Validação do Modelo Final (LightGBM)</a>
   <ul class="collapse">
-  <li><a href="#objetivo-central" id="toc-objetivo-central" class="nav-link" data-scroll-target="#objetivo-central">🎯 Objetivo Central</a></li>
-  <li><a href="#estrutura-do-desafio-e-dados" id="toc-estrutura-do-desafio-e-dados" class="nav-link" data-scroll-target="#estrutura-do-desafio-e-dados">📊 Estrutura do Desafio e Dados</a></li>
-  <li><a href="#escopo-e-metodologia-de-risco" id="toc-escopo-e-metodologia-de-risco" class="nav-link" data-scroll-target="#escopo-e-metodologia-de-risco">🛡️ Escopo e Metodologia de Risco</a></li>
+  <li><a href="#métricas-de-desempenho-finais" id="toc-métricas-de-desempenho-finais" class="nav-link" data-scroll-target="#métricas-de-desempenho-finais">5.1. 📊 Métricas de Desempenho Finais</a></li>
+  <li><a href="#curvas-de-ranqueamento" id="toc-curvas-de-ranqueamento" class="nav-link" data-scroll-target="#curvas-de-ranqueamento">5.2. 📊 Curvas de Ranqueamento</a>
+  <ul class="collapse">
+  <li><a href="#curva-roc" id="toc-curva-roc" class="nav-link" data-scroll-target="#curva-roc">5.2.1. Curva ROC:</a></li>
+  <li><a href="#curva-ks" id="toc-curva-ks" class="nav-link" data-scroll-target="#curva-ks">5.2.2. Curva KS:</a></li>
+  </ul></li>
+  <li><a href="#taxa-de-evento-por-quantil-lift-analysis" id="toc-taxa-de-evento-por-quantil-lift-analysis" class="nav-link" data-scroll-target="#taxa-de-evento-por-quantil-lift-analysis">5.3. 📉 Taxa de Evento por Quantil (Lift Analysis)</a></li>
+  <li><a href="#estabilidade-temporal-do-ks-e-calibração" id="toc-estabilidade-temporal-do-ks-e-calibração" class="nav-link" data-scroll-target="#estabilidade-temporal-do-ks-e-calibração">5.4. ⚖️ Estabilidade Temporal do KS e Calibração</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -180,29 +185,92 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="introdução-construção-do-modelo-de-credit-scoring" class="level1">
-<h1>📄 Introdução: Construção do Modelo de Credit Scoring</h1>
-<p>O presente relatório técnico detalha a <strong>construção e validação</strong> de um modelo de <strong><em>Credit Scoring</em></strong> desenvolvido para apoiar a tomada de decisão em concessão de crédito.</p>
-<section id="objetivo-central" class="level2">
-<h2 class="anchored" data-anchor-id="objetivo-central">🎯 Objetivo Central</h2>
-<p>O objetivo primário é estimar a probabilidade de inadimplência (default) de clientes em potencial, fornecendo um score robusto e interpretável que permita a automação e otimização das políticas de risco do banco.</p>
+<section id="validação-do-modelo-final-lightgbm" class="level1">
+<h1>5. 🚀 Validação do Modelo Final (LightGBM)</h1>
+<p>Esta fase consolida a <strong>performance do modelo LightGBM tunado</strong>, analisando em profundidade a separação de risco (ROC/KS), a distribuição do score (Taxa de Evento por Quantil) e a calibração da probabilidade de default no conjunto de Teste OOT.</p>
+<hr>
+<section id="métricas-de-desempenho-finais" class="level2">
+<h2 class="anchored" data-anchor-id="métricas-de-desempenho-finais">5.1. 📊 Métricas de Desempenho Finais</h2>
+<p>O modelo final (LightGBM) foi avaliado em ambos os conjuntos.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Base</th>
+<th style="text-align: center;">AUC</th>
+<th style="text-align: center;">KS</th>
+<th style="text-align: center;">Gini</th>
+<th style="text-align: center;">Accuracy</th>
+<th style="text-align: center;">Precision</th>
+<th style="text-align: center;">Recall</th>
+<th style="text-align: center;">F1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Treino</strong></td>
+<td style="text-align: center;">0.954</td>
+<td style="text-align: center;">0.766</td>
+<td style="text-align: center;">0.908</td>
+<td style="text-align: center;">0.878</td>
+<td style="text-align: center;">0.904</td>
+<td style="text-align: center;">0.634</td>
+<td style="text-align: center;">0.745</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Teste (OOT)</strong></td>
+<td style="text-align: center;"><strong>0.708</strong></td>
+<td style="text-align: center;"><strong>0.314</strong></td>
+<td style="text-align: center;"><strong>0.417</strong></td>
+<td style="text-align: center;">0.694</td>
+<td style="text-align: center;">0.589</td>
+<td style="text-align: center;">0.159</td>
+<td style="text-align: center;">0.250</td>
+</tr>
+</tbody>
+</table>
+<p>A alta performance no Treino (AUC = 0.95) comparada à performance no Teste OOT (AUC = 0.708) demonstra um alto grau de <strong>overfitting</strong>, comum em modelos de ensemble que buscam a máxima acurácia. No entanto, o AUC de 0.708 no OOT confirma que o modelo <strong>reteve um poder de separação</strong> de risco robusto.</p>
+<hr>
 </section>
-<section id="estrutura-do-desafio-e-dados" class="level2">
-<h2 class="anchored" data-anchor-id="estrutura-do-desafio-e-dados">📊 Estrutura do Desafio e Dados</h2>
-<p>A base de dados utilizada compõe-se de 10.738 registros e 81 variáveis mascaradas. O desenvolvimento do modelo é guiado pela necessidade de transparência e interpretabilidade, que são cruciais para a governança e auditoria regulatória em instituições financeiras.</p>
+<section id="curvas-de-ranqueamento" class="level2">
+<h2 class="anchored" data-anchor-id="curvas-de-ranqueamento">5.2. 📊 Curvas de Ranqueamento</h2>
+<section id="curva-roc" class="level3">
+<h3 class="anchored" data-anchor-id="curva-roc">5.2.1. Curva ROC:</h3>
+<p>A Curva ROC no Teste OOT confirma o poder de ranqueamento, com um AUC de 0.708.</p>
+<p><img src="../images/image-3.png" class="img-fluid"></p>
 </section>
-<section id="escopo-e-metodologia-de-risco" class="level2">
-<h2 class="anchored" data-anchor-id="escopo-e-metodologia-de-risco">🛡️ Escopo e Metodologia de Risco</h2>
-<p>O projeto abrange o fluxo completo de Data Science, focado em entregar um modelo de Credit Scoring estável e aplicável ao negócio.</p>
-<p>A metodologia é estruturada em <strong>quatro pilares</strong>:</p>
-<blockquote class="blockquote">
-<ol type="1">
-<li><p><strong>Pré-processamento:</strong> Tratamento de dados, remoção de redundâncias (Multicolinearidade) e análise de estabilidade das variáveis (PSI).</p></li>
-<li><p><strong>Modelagem e Seleção:</strong> Comparação de algoritmos (priorizando estabilidade e interpretabilidade) para identificar o melhor preditor.</p></li>
-<li><p><strong>Validação OOT:</strong> Teste rigoroso de desempenho em um conjunto Out-of-Time (OOT) (safras Outubro, Novembro e Dezembro), crucial para simular o risco futuro e comprovar a estabilidade temporal.</p></li>
-<li><p><strong>Recomendação:</strong> Análise final de métricas (AUC, Gini, KS) e calibração para definir o Scorecard e o ponto de corte ideal para a tomada de decisão de crédito.</p></li>
-</ol>
-</blockquote>
+<section id="curva-ks" class="level3">
+<h3 class="anchored" data-anchor-id="curva-ks">5.2.2. Curva KS:</h3>
+<p>O KS Score de 0.314 indica que a separação máxima entre a distribuição acumulada de Bons e Maus Pagadores é de 31.4%, um resultado satisfatório.</p>
+<p><img src="../images/image-5.png" class="img-fluid"></p>
+<hr>
+</section>
+</section>
+<section id="taxa-de-evento-por-quantil-lift-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="taxa-de-evento-por-quantil-lift-analysis">5.3. 📉 Taxa de Evento por Quantil (Lift Analysis)</h2>
+<p>A análise por quantis (decis) é a tradução mais direta do poder de ranqueamento para o negócio, mostrando a concentração de risco.</p>
+<p>O gráfico de Taxa de Evento compara a frequência observada de default por faixas de score (quantis) no Treino e no Teste OOT.</p>
+<p><img src="../images/image-6.png" class="img-fluid"></p>
+<hr>
+</section>
+<section id="estabilidade-temporal-do-ks-e-calibração" class="level2">
+<h2 class="anchored" data-anchor-id="estabilidade-temporal-do-ks-e-calibração">5.4. ⚖️ Estabilidade Temporal do KS e Calibração</h2>
+<p><strong>KS por Safra</strong></p>
+<p>A análise do KS mês a mês (por safra) é a verificação mais rigorosa da estabilidade preditiva ao longo do tempo.</p>
+<p><img src="../images/image-7.png" class="img-fluid"></p>
+<p><strong>Nota:</strong> O KS no Teste OOT (safras 10/2014 a 12/2014) mostra uma queda de performance na última safra (12/2014) (KS = 0.258). Isso pode ser um sinal de forte drift de mercado ou mudança de política de crédito recente, exigindo monitoramento imediato.</p>
+<p><strong>Curva de Calibração</strong></p>
+<p>A curva de calibração verifica se a probabilidade prevista (P(Default)) corresponde à frequência real de default observada.</p>
+<p><img src="../images/image-8.png" class="img-fluid"></p>
 
 
 </section>
